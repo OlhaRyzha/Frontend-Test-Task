@@ -69,6 +69,7 @@ img {
   gap: 15px;
   align-items: flex-end;
   @media screen and (min-width: 1140px) {
+    
     flex-direction: column;
     align-items: flex-start;
   }
@@ -107,7 +108,7 @@ h1 {
   @media screen and (min-width: 1140px) {
   position: relative;
   height: 70px;
-left: 0;
+  left: 0;
   align-items: center;
   }
 }

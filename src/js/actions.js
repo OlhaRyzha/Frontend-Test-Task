@@ -77,6 +77,7 @@ async function onRangeChange(e) {
 }
 
 async function calculatorForStorage() {
+  
   const storageValue = inputForStorage.value;
   const transferValue = inputForTransfer.value;
 
@@ -181,10 +182,7 @@ async function calculatorForStorage() {
 async function calculatorForDesktop() {
   const storageValue = inputForStorage.value;
   const transferValue = inputForTransfer.value;
-  cort.map(el => {
-    el.style.width = '';
-    el.style.height = '';
-  });
+
   cort[0].style.width = `${
     (storageValue * 0.005 + transferValue * 0.01 < 7
       ? 7
@@ -276,6 +274,9 @@ async function calculatorForDesktop() {
   cort.map(el => {
     if (el.style.width.replace('px', '') > 1000) {
       el.style.width = '1000px';
+    }
+    if (el.style.width.replace('px', '') < 300) {
+      el.style.width = '300px';
     }
   });
 
