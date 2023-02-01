@@ -1,0 +1,47 @@
+
+<div class="diagram">
+  <h1>Cloud Storage Monthly Calculator</h1>
+  <ul class="diagram__list">
+    <li class="diagram__item"><a href="#" style="gap: 28px;" class="diagram__link">
+        <div class="cort"><span class="cost visually-hidden"></span>
+          <p class="text">backblaze</p>
+        </div><img class="diagram__img backblaze-img"  width="70" height="50"
+          src="/src/images/backblaze.svg" alt="">
+      </a></li>
+    <li class="diagram__item"><a href="#" class="diagram__link">
+        <div class="cort"><span class="cost visually-hidden"></span>
+          <p class="text">bunny</p>
+        </div>
+        <div class="label-wrap">
+          <label><input checked type="radio" name="HDD" id="HDD">HDD</label>
+          <label><input type="radio" name="HDD" id="SSD">SSD</label>
+        </div>
+        <img class="diagram__img bunny-img"  width="70" height="50" src="/src/images/bunny.svg"
+          alt="">
+      </a></li>
+    <li class="diagram__item"><a href="" class="diagram__link">
+        <div class="cort"><span class="cost visually-hidden"></span>
+          <p class="text">scaleway</p>
+        </div>
+        <div class="label-wrap">
+          <label><input checked type="radio" name="Multi" id="Multi">Multi</label>
+          <label><input type="radio" name="Multi" id="Single">Single</label>
+        </div>
+        <img class="diagram__img scaleway-img"  width="50" height="50" src="/src/images/scaleway.svg"
+          alt="">
+      </a></li>
+    <li class="diagram__item"><a href="" style="gap: 39px;" class="diagram__link">
+        <div class="cort"><span class="cost visually-hidden"></span>
+          <p class="text">vultr</p>
+        </div><img class="diagram__img vultr-img"  width="50" height="50" src="/src/images/vultr.svg"
+          alt="">
+      </a></li>
+  </ul>
+</div>
+
+<form class="form">
+  <label for="storage-range">Storage:</label>
+  <input type="range" class="styled-slider slider-progress" name="storage" id="storage-range" step="1" min="0" max="1000">
+  <label for="transfer-range">Transfer:</label>
+  <input type="range" class="styled-slider slider-progress" name="transfer" id="transfer-range" step="1" min="0" max="1000">
+</form>
